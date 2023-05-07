@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminloginController">
+    <left>
+      <AnchorPane prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #C9C0BB;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="247.0" fitWidth="348.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../projet_classe/frames/Image/Rouge%20Londres%20Téléphonique%20Cabine%20Photo%20Carte%20postale.png" />
+               </image>
+            </ImageView>
+            <Text fill="#e5e4e2" layoutX="94.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Find your word">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Button layoutX="102.0" layoutY="413.0" mnemonicParsing="false" onAction="#pageprec" prefHeight="49.0" prefWidth="143.0" style="-fx-background-color: #E5E4E2;" text="Page précédente" textFill="#c9c0bb">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #E5E4E2;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="txtusername" layoutX="108.0" layoutY="206.0" promptText="Admin Name" style="-fx-background-color: transparent; -fx-border-color: #C9C0BB; -fx-border-width: 0px 0px 2px 0px;" />
+            <Text fill="#c9c0bb" layoutX="115.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Login">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="txtpassword" layoutX="109.0" layoutY="261.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #C9C0BB; -fx-border-width: 0px 0px 2px 0px;" />
+            <Button fx:id="btnlogin" layoutX="109.0" layoutY="318.0" mnemonicParsing="false" onAction="#login" prefHeight="40.0" prefWidth="149.0" style="-fx-background-color: #c9c0bb;" text="Login" textFill="#e5e4e2" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

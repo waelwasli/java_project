@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EcoleController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #E5E4E2;" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="184.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Information sur les écoles">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="txtpays" layoutX="432.0" layoutY="65.0" prefWidth="150.0" promptText="Nom Pays" style="-fx-background-color: #C9C0BB;" />
+            <TableView fx:id="table_ecole" layoutY="104.0" prefHeight="400.0" prefWidth="700.0">
+              <columns>
+                <TableColumn fx:id="txtnom" prefWidth="349.59998166561127" text="Nom de l'école" />
+                <TableColumn fx:id="txtadresse" prefWidth="350.0" text="Adresse de l'école" />
+              </columns>
+            </TableView>
+            <Button fx:id="chercherid" layoutX="601.0" layoutY="59.0" mnemonicParsing="false" onAction="#showinfos" prefHeight="34.0" prefWidth="96.0" style="-fx-background-color: #C9C0BB;" text="Chercher">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button layoutX="22.0" layoutY="61.0" mnemonicParsing="false" onAction="#pageprec" prefHeight="33.0" prefWidth="128.0" style="-fx-background-color: #C9C0BB;" text="Page précédente">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="593.0" layoutY="6.0" mnemonicParsing="false" onAction="#deconnect" prefHeight="38.0" prefWidth="102.0" style="-fx-background-color: #C9C0BB;" text="Déconnecter">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminuserController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #C9C0BB;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="84.0" layoutY="202.0" mnemonicParsing="false" onAction="#switchToAdminLogin" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #E5E4E2;" text="Admin" textFill="#c9c0bb">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #E5E4E2;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="75.0" layoutY="200.0" mnemonicParsing="false" onAction="#switchToUserLogin" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #C9C0BB;" text="User" textFill="#e5e4e2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
